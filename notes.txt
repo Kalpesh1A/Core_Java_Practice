@@ -1,0 +1,66 @@
+#Features of java:
+1>platform independant
+2>java Does not Support OpeartorOveloading hence  java is pureobject oriented but does not 100%
+*Language Fundamentals :
+1>Idetifiers Rules  etc
+2>Command Line Arguments & Var Args Method
+3> ArraysInitialization and length 
+4>Multitdimentional Arrays (Arrays of Arrays Approach ) 
+	:Memory Representation
+	:HashCode , Null , NullPointerException 
+	:Array Level Promotion not allowed ex.int-->long  not allowed at array level  
+5>Static & Instance Variable & Local Variable
+**Declaration & Access Control
+6>Implicit & EXplicit Import always used to  Beacuse 
+	-HightechCity Standards
+	-not faced Ambguity probelem , 
+	-Compiler give importance to   Explicit->Current Working Directory -->Implicit
+	In java, 
+	-First Statement Should be Package Statement (Only One) Second Should be import .
+	-Compile time differ runtime same { for number of important statements }
+	-Dynamic Loading 
+	-No Memory Wastage
+{Note : We Never Recommend to use static import it creates confusion and bad programming practice}
+
+** Accesss Modifiers **
+
+1>Public Class --> Access inside and outside of package 
+  Public Method --> Access inside and outside of package but always check corresponding visibility of class  it should be public
+2>Default Class --> Package level Access
+  Default Method--> Package level Access
+3>Final Class--> can't inheritance , Method in Finalclass by default final but variables not
+  Final Methods-->Final Methods can not override 
+  Final Variables --> Value once intialize then can not change similar to const in c++
+  	Final Instance Variable  :  --For Final Instance variable jvm does not provide default value it's our responsibility to initialize it			
+		      		    --Final Instance variable can initialize at time of declaration , inside instance block or inside constructor {not in method}
+	Final Static Variable     : --For Final static variable jvm does not provide default value it's our responsibility to initialize it
+				    --Final static variable can initialize at time of declaration , inside static block or inside constructor {not in method}
+
+4>Abstract Class-->Abstract Class Never Talks About object Creation { it contains zero or number of abstract methods EX.httpServlet class }
+  Abstract Method--> -Always declared in Abstract class
+		     -Never Talks about implementation Child Class responsible for implementation {ends with semicolon} 
+		     -if child does not provide implementation for abstract method then child should be declared as abstract 
+		      and child of child must responsible for implementation. 
+		{Note : Abstract final,static,private,strictfp etc illegal combination}
+5>Strictfp class / Method--> if class declare as strictfp then for calculating floating point arithmatic 
+			     it follows IEEE754 stds to achieve platform independant result
+				Ex.System.out.print(10.0/3)-->p1=3.33333 p2=3.333333333 here p is platform IEE754=3.333 
+6>Private Class : Top level classes should be public static final or abstract we can non declare top level class as private
+  Private Methods : Can access only in current class not avilable to child hence abstract and Private is illegal combination
+7>Protected Class :Top level classes should be public static final or abstract we can non declare top level class as protected
+  Protected Method: Default+Kid :It is package level access i.e Default + we can accesse it outside of package but using child reference means the childclass 
+		   should be extend that parent class
+
+Note : Priority of Accesibility public > protected > Default > Private
+Note ::{  we are already learn static and instance modifier for variable in language fundamentals
+Static Method :Overloading and inheritance is alowed for static methods including main method also 
+	}
+8>Native method//Foreign Method // Non java code method -->  Advantage:improve performance of system disadvantage:Breaks platform independant nature
+9>Syncronized Method : solve data inconsistency probelem
+10>volatile Variables :solve data incosistency probelem
+11>Transient Variables : use for security purpose
+
+
+		 
+
+

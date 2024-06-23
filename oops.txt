@@ -1,0 +1,39 @@
+Abstraction :  Hiding the implementation & showing functionality to the user called abstraction .
+	     - We can implement data hiding using private modifier .
+	     - The main advantage of abstraction is to achieve security & improves modularity of the application.
+		Ex. Bank Peoplem offering set of services to the customer thorugh ATM  GUI Screen but hides the implementation .
+
+Encapsulation : The process of Wrapping of data called as Encapsulation.
+		- The main advantages of Encapsulation is to achieve security & userFriendliness .
+		Ex . java class contains various Methods and variables of private modifier to achive security.
+TightlyEncapsulation : class contain private variables and child class who extending that class also conntain all variables are private .
+
+Inheritance :Aquiring properties of someone by his permisssion .
+	    -The main advantage of Inheritance is to achieve reusability.	     -
+There are two realworld situations where we used Inheritance
+1>Is a Relationship : -We can implement it using extend keyword
+	      :By using parent refernce we can call parent methods only & using child refernce we can call both parent and child methods
+	      :parent reference is used to hold child object but we can call only parent methods we cant call child methods
+	      :child reference can not used to hold parent object .
+*Multiple Inheritance : java not supports but achieved using interfaces .
+*Cyclic Inheritance : java does not allow cyclic Inheritance . 
+2> Has a Relationship : Aggregation(yes) & Composition(No) .
+
+MethodSignature : method name and arguments are parts of method signature . return type is not a part of method signature in java;
+
+Polymorphism : One thing has many forms 
+		-Adv : flexibility 
+1>Overloading : same name with different parameter list .(method signature differ)
+		- private static final method can  be overloaded
+		- No Retriction for access modifier
+		- No restriction on throws clause
+		-follows static binding (early binding / compile time binding):compiler responsible for method resolution based on reference type.
+2>Overriding : Same name with same parameter list (method signature is same )
+		- private static final method can not be overloaded
+		- can not reduce scope of access modifier
+		- if child class throws any cheked exception then parent shoule be through that exception .
+		-follows dynamic binding (late / runtime binding ):jvm responsible for method resolution based on runtime object.
+Note : Method hiding is overriding of static methods 
+
+
+
